@@ -1,0 +1,59 @@
+.selectbook{
+  margin-left: 12%;
+  margin-top: 3%;
+  width: auto;
+  height: 60px;
+}
+.select{
+  border: 1px solid #000;
+  width: 70%;
+  height: 40px;
+  float: left;
+  border-radius: 10px 0 0 10px;
+}
+.btn{
+  height: 42px;
+  width: 30px !important;
+  float: left;
+  background-color: #4e6ef2;
+  border-radius: 0 10px 10px 0;
+}
+#img1{
+  float: left;
+  margin-left: 3%;
+}
+.nr{
+  margin-top: 4%;
+}
+.auth{
+  width: 100%;
+  border-bottom: 1px solid #000;
+  height: 9rem;
+}
+.text{
+  margin-left: 3%;
+  margin-top: 1%;
+  float: left;
+}
+.authors{
+  color: pink;
+  margin-top: 4%;
+  font-size: 14px;
+}
+.memo{
+  color: gray;
+  margin-top: 7%;
+  font-size: 14px;
+}
+.jx{
+  width: 8%;
+  margin: 0 auto;
+  /* opacity: 0.2; */
+  font-size: 16px;
+  background-color: rgba(0,255,127);
+  text-align: center;
+  color: #fff;
+  line-height: 4.3rem;
+  float: right;
+  margin-right: 4%;
+}

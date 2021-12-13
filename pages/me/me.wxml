@@ -1,0 +1,4 @@
+<view class="box">
+<image bindtap="login" src="{{photo}}" class="head"></image>
+<view><button bindtap="note">我的读书笔记</button></view>
+</view>

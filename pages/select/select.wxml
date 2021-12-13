@@ -1,0 +1,5 @@
+<view class="book">
+<view><p>搜索结果:</p></view>
+<view class="photo"><image id="img1" src="data:image/png;base64,{{photo}}" /></view>
+<view class="title">书名:{{title}}</view>
+</view>

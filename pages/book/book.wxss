@@ -1,0 +1,79 @@
+.pic{
+    float: left;
+    margin-top: 9%;
+    margin-left: 3%;
+}
+.text{
+    font-size: 20px;
+    font-weight: bold;
+}
+.te{
+    float: left;
+    margin-top: 9%;
+    margin-left: 3%;
+}
+.authors{
+    color: pink;
+    margin-top: 4%;
+    font-size: 17px;
+}
+.press{
+    color: gray;
+    margin-top: 20%;
+    font-size: 17px;
+}
+.memo{
+    float: left;
+    display: -webkit-box;
+    width: 80%;
+    margin-left: 3%;
+    font-size: 20px;
+}
+.nr{
+    margin-top: 7%;
+    width: 100%;
+    float: left;
+}
+.hide{
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.btn{
+    float: left;
+    width: 14%;
+}
+.button{
+    float: left;
+    width:100%;
+}
+#btn1{
+    border-radius: 25px;
+    height: 3rem;
+    margin-top: 20px;
+    margin-left: 3%;
+    line-height: 1.7rem;
+    float: left;
+    font-weight: 400;
+    background:palevioletred;
+    color: #fff;
+}
+#note{
+    float: left;
+    width: 3rem;
+    height: 3rem;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.0);
+    border-radius: 50%;
+    border: 1px solid grey;
+    margin-left: 10%;
+}
+#icon{
+    top: 15%;
+    position: absolute;
+    left: 15%;
+}

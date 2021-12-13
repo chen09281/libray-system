@@ -1,0 +1,20 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class="selectbook">
+  <input  class="select" type="text" name="id" placeholder="请书要搜索的书籍id" bindblur="accountblur" /><button class="btn" disabled="{{disabled}}" type="{{btnstate}}" form-type="submit"><image src="../images/搜索.png" style="width: 30px; height: 30px;position: absolute; top:3; left: 0;right: 0;left: 0; margin: auto;" /></button>
+</view>
+<view class="content"  wx:for="{{book}}" for:key="index" wx:key="key" bindtap="kantie" id='{{item.id}}'>
+<view class="auth">
+<view class="nr"  >
+<view><image id="img1" src="data:image/png;base64,{{item.photo}}" style="width: 6rem; height: 8rem;" /></view>
+<view class="text">
+<text style="font-size: 17px; font-weight: bold;">{{item.name}}\n</text>
+<text class="authors">{{item.authors}}\n</text>
+<p class="memo">{{item.press}}</p>
+</view>
+<view class="jx">
+精选
+</view>
+</view>
+</view>
+</view>
+</form>

@@ -1,0 +1,12 @@
+.content{
+    margin-top: 20%;
+}
+.text{
+    border: 1px solid #000;
+    width: 80%;
+    margin-left: 10%;
+}
+.btn{
+    margin-top: 10%;
+    
+}

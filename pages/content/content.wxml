@@ -1,0 +1,5 @@
+<view class="box" style="background-color: #FFF2E2;">
+<view class="content" >
+<text>{{content}}</text>
+</view>
+</view>

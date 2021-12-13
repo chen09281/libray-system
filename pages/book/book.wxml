@@ -1,0 +1,18 @@
+<view>
+<view class="top">
+<view class="pic"><image id="img1" style="width:8rem;height:10rem;" src="data:image/png;base64,{{photo}}" /></view>
+<view class="te">
+<view class="text">{{name}}</view>
+<view class="authors">{{authors}}</view>
+<view class="press">{{press}}\n</view>
+</view>
+</view>
+<view class="nr">
+<view class="memo {{isF?'hide':''}}">{{memo}}</view>
+<text bindtap="aa" class="btn">{{isF ? '展开' : '收起'}}</text>
+</view>
+<view class="button">
+<button bindtap="start" id="btn1">开始阅读</button>
+<button bindtap="addnote" id="note"><image style="width:2rem;height:2rem;" id="icon" src="../images/Note.png" /></button>
+</view>
+</view>

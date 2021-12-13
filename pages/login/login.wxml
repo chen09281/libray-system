@@ -1,0 +1,8 @@
+<form bindsubmit="formSubmit" bindreset="formRest">
+<view>
+<input type="text" name="username" placeholder="请输入用户名" />
+<input type="text" password name="passwd" placeholder="请输入密码" />
+<button class="btn" form-type="submit">登录</button>
+<button class="btn" bindtap="reg">注册</button>
+</view>
+</form>
