@@ -1,0 +1,2 @@
+<button bindtap="addbook" class="addbook"><image src="../images/书籍.png" style="width: 5rem; height: 5rem;" id="icon1"></image><text>添加书籍</text></button>
+<button bindtap="addcontent" class="addcontent"><image src="../images/_内容2.png" id="icon1" style="width: 5rem; height: 5rem;"></image><text>添加内容</text></button>

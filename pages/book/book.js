@@ -15,6 +15,11 @@ Page({
           url: '../content/content',
         }) 
     },
+    mynote:function(e){
+        wx.redirectTo({
+          url: '../booknote/booknote',
+        })
+    },
     addnote:function(e){
         wx.navigateTo({
           url: '../addnote/addnote',
@@ -22,7 +27,7 @@ Page({
     },
     onLoad:function(option){
         var that = this;
-        console.log('123')
+        console.log(app.globalData.bookid)
         wx.request({
           url: 'http://47.106.189.98:8899/book/getbyid',
           data:{

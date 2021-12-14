@@ -14,5 +14,9 @@
 <view class="button">
 <button bindtap="start" id="btn1">开始阅读</button>
 <button bindtap="addnote" id="note"><image style="width:2rem;height:2rem;" id="icon" src="../images/Note.png" /></button>
+<button bindtap="mynote" id="mynote"><image style="width: 2rem;height:2rem;" id="icon" src="../images/我的笔记.png" />"</button>
+</view>
+<view class="gg">
+<image src="../images/广告.jpg" class="gg"></image>
 </view>
 </view>

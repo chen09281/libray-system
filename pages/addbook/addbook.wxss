@@ -1,0 +1,17 @@
+#img1{
+    width: 10rem;
+    height: 12rem;
+    border: 1px solid #000;
+    position: relative;
+    margin-top: 20%;
+    left:30%;
+}
+.text{
+    margin-top: 5%;
+    width: 80%;
+    margin-left: 10%;
+    border-bottom: 1px solid #000;
+}
+.btn{
+    margin-top: 20px;
+}

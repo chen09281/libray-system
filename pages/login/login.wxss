@@ -1,1 +1,22 @@
-/* pages/login/login.wxss */
+.login{
+    width: 80%;
+    margin-left: 10%;
+    border-bottom: 2px solid pink;
+    margin-top: 20%;
+}
+.passwd{
+    width: 80%;
+    margin-left: 10%;
+    border-bottom: 2px solid pink;
+    margin-top: 10%;
+}
+.btn{
+    background: pink;
+    margin-top: 5%;
+    color: #fff;
+    border-radius: 10px 10px 10px 10px;
+}
+.reg{
+    width: 100%;
+    text-align: center;
+}

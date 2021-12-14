@@ -1,8 +1,11 @@
 <form bindsubmit="formSubmit" bindreset="formRest">
 <view>
-<input type="text" name="username" placeholder="请输入用户名" />
-<input type="text" password name="passwd" placeholder="请输入密码" />
+<image src="../images/广告.jpg" style="width: 25rem; height: 20rem;"></image>
+<input type="text" name="username" class="login" placeholder="请输入用户名" />
+<input type="text" password name="passwd" class="passwd" placeholder="请输入密码" />
 <button class="btn" form-type="submit">登录</button>
-<button class="btn" bindtap="reg">注册</button>
+<view style="text-align: center; margin-top: 10%;">
+<text class="reg" bindtap="reg">注册</text>
+</view>
 </view>
 </form>

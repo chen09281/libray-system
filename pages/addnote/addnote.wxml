@@ -3,7 +3,6 @@
 <view class="content">
     <textarea rows="3" cols="20" placeholder="请输入你要记录的笔记" name="note" class="text" bindblur="accountblur"></textarea>
 <button class='btn' form-type="submit">提交</button>
-<button class="reg" bindtap="reg">注册</button>
 </view>
 </view>
 </form>

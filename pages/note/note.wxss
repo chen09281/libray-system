@@ -1,1 +1,12 @@
-/* pages/note/note.wxss */
+page{
+    background-color: #FFF2E2;
+}
+.li{
+    width: 80%;
+    margin-left: 10%;
+    border-bottom: 1px dotted #000;
+    margin-top: 20px;
+}
+.id{
+    float: right;
+}

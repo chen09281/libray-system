@@ -1,0 +1,5 @@
+<form bindsubmit="formSubmit" bindreset="formRest">
+<input type="text" name="bookid" class="bookid" placeholder="请输入书籍id" />
+<textarea row="3" cols="20" placeholder="请输入内容" name="content" class="content" bindtap="content"></textarea>
+<button class="btn" form-type="submit">添加</button>
+</form>

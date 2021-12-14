@@ -5,7 +5,7 @@ Page({
 
   },
   note:function(){
-    wx.redirectTo({
+    wx.navigateTo({
       url: '../note/note',
     })
   },

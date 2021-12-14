@@ -1,0 +1,12 @@
+<form bindsubmit="formSubmit" bindreset="formRest">
+<image bindtap="photo" src="{{src}}" id="img1" />
+<view class="input">
+<input type="text" name="name" class="text" bindblur="accountblur" placeholder="请输入书籍名称" />
+<input type="text" name="isbn" class="text" placeholder="请输入书籍isbn" bindblur="accpuntblur" />
+<input type="text" name="authors" class="text" placeholder="请输入书籍" bindblur="accpuntblur" />
+<input type="text" name="press" class="text" placeholder="请输入印刷商" bindblur="accpuntblur" />
+<input type="text" name="price" class="text" placeholder="请输入书籍价格" bindblur="accpuntablur" />
+<input type="text" name="memo" class="text" placeholder="输入备忘录" bindblur="accpuntablur" />
+<button class="btn" disabled="{{disabled}}" type="{{btnstate}}" form-type="submit">添加</button>
+</view>
+</form>

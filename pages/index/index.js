@@ -42,6 +42,11 @@ onLoad:function(option){
     }
   });
 },
+addbook:function(e){
+  wx.navigateTo({
+    url: '../mid/mid',
+  })
+},
 kantie:function(e){
   // console.log(e)
   let id = e.currentTarget.id;
@@ -71,15 +76,10 @@ formSubmit: function (e) {
                 title: '搜索成功',
                 icon:'success'
               })
-          app.globalData.id = res.data.id;
-          app.globalData.isbn = res.data.isbn;
-          app.globalData.authors = res.data.authors;
-          app.globalData.press = res.data.press;
-          app.globalData.name = res.data.name;
-          app.globalData.photo = res.data.photo;
+          app.globalData.bookid = e.detail.value.id;     
           setTimeout(function(){
           wx.navigateTo({
-            url: '/pages/select/select',
+            url: '/pages/book/book',
           })
           },2000);
       },fail:function(error){

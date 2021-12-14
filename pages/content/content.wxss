@@ -1,3 +1,6 @@
+page{
+    background-color: #FFF2E2;
+}
 .content{
     margin-top: 5%;
     display: inline-block;

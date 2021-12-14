@@ -1,0 +1,6 @@
+<view class="content" wx:for="{{book}}" for:key="index" wx:key="key">
+<view class="note">
+<view class="text"><text class="con">{{item.note}}</text>
+</view>
+</view>
+</view>

@@ -1,0 +1,17 @@
+.addbook{
+    width: 80%;
+    height: 30%;
+    background: greenyellow;
+    font-size: 20px;
+    line-height: 180%;
+    margin-top: 40%;
+}
+#icon1{
+    float: left;
+}
+.addcontent{
+    width: 80%;
+    height: 30%;
+    margin-top: 30%;
+    font-size: 20px;
+}

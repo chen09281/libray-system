@@ -59,6 +59,19 @@
     background:palevioletred;
     color: #fff;
 }
+#mynote{
+    float: left;
+    width: 3rem;
+    height: 3rem;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.0);
+    border-radius: 50%;
+    border: 1px solid grey;
+    margin-left: 5%;
+}
 #note{
     float: left;
     width: 3rem;
@@ -76,4 +89,8 @@
     top: 15%;
     position: absolute;
     left: 15%;
+}
+.gg{
+    padding-top: 20%;
+    width: 100%;
 }

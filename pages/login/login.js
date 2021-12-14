@@ -6,7 +6,7 @@ Page({
     },
     reg:function(){
         wx.navigateTo({
-          url: '../reg/reg',
+          url: '../regit/regit',
         })
     },
     formSubmit: function (e) {

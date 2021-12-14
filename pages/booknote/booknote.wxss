@@ -2,14 +2,11 @@ page{
     background-color: #FFF2E2;
 }
 .content{
-    margin-top: 20%;
+    width: 100%;
 }
 .text{
-    border: 1px solid #000;
+    border-bottom: 1px solid #000;
     width: 80%;
     margin-left: 10%;
-}
-.btn{
-    margin-top: 10%;
-    
+    margin-top:10%;
 }
