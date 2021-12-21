@@ -9,7 +9,7 @@ Page({
         wx.request({
             url: 'http://47.106.189.98:8899/bookcontent/getbybookid',
             data: {
-                book_id: app.globalData.book_id
+                book_id: 145
             },
             header: {
                 'content-type': 'Application/json'

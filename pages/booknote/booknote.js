@@ -4,8 +4,9 @@ Page({
         book:''
     },
     onLoad:function(option){
+        let data = wx.getStorageSync('user')
         var self = this
-        if(app.globalData.user_id != undefined){
+        if(data.id != undefined){
         wx.request({
             url: 'http://47.106.189.98:8899/userbooknote/getbyuseridbookid',
             header:{
@@ -14,7 +15,7 @@ Page({
             method:'get',
             dataType:'json',
             data:{
-              user_id:app.globalData.user_id,
+              user_id:data.id,
               book_id:app.globalData.book_id
             },
             success:function(res){

@@ -1,35 +1,39 @@
 const app = getApp()
 
 Page({
-  data:{
+  data: {
 
   },
-  note:function(){
+  note: function () {
     wx.navigateTo({
       url: '../note/note',
     })
   },
-  onLoad:function(option){
-    console.log(app.globalData.photo)
-    if(app.globalData.photo != undefined){
-    this.setData({
-      photo:'data:image/png;base64,'+app.globalData.photo
-    })
-  } else {
-    this.setData({
-      photo:'../images/男头像.png'
-    })
-  }
+  onLoad: function (option) {
+    let data = wx.getStorageSync('user')
+    console.log(data.photo)
+
+    if (data.photo == undefined) {
+      this.setData({
+        photo: '../images/男头像.png'
+      })
+
+    } else {
+      this.setData({
+        photo: 'data:image/png;base64,' + data.photo
+      })
+    }
   },
-  login:function(){
-    if(app.globalData.photo != undefined){
+  login: function () {
+    let data = wx.getStorageSync('user')
+    if (data.photo != undefined) {
       wx.navigateTo({
         url: '../detail/detail',
       })
     } else {
-  wx.redirectTo({
-    url: '../login/login',
-  })
-}
-}
+      wx.redirectTo({
+        url: '../login/login',
+      })
+    }
+  }
 })

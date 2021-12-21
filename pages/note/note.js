@@ -5,11 +5,12 @@ Page({
     note:''
   },
   onLoad: function (option) {
+    let data = wx.getStorageSync('user')
     var that = this
     wx.request({
       url: 'http://47.106.189.98:8899/userbooknote/getbyuserid',
       data: {
-        user_id: 1131
+        user_id: data.id
       },
       header: {
         'content-type': 'Application/json'

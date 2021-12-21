@@ -72,6 +72,7 @@ formSubmit: function (e) {
       // 成功返回
       success: function (res) {
           console.log(res.data)
+          if(res.data.name != undefined){
               wx.showToast({
                 title: '搜索成功',
                 icon:'success'
@@ -82,6 +83,12 @@ formSubmit: function (e) {
             url: '/pages/book/book',
           })
           },2000);
+        } else {
+          wx.showToast({
+            title: '搜索失败',
+            icon:'error'
+          })
+        }
       },fail:function(error){
           console.log(error)
           wx.showToast({

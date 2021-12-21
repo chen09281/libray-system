@@ -1,66 +1,39 @@
-// pages/detail/detail.js
+const app = getApp()
+
 Page({
-
-    /**
-     * 页面的初始数据
-     */
-    data: {
+    data:{
 
     },
-
-    /**
-     * 生命周期函数--监听页面加载
-     */
-    onLoad: function (options) {
-
+    onLoad:function(){
+        let data = wx.getStorageSync('user')
+        console.log(data.name)
+        this.setData({
+            name:data.name,
+            arr:data.address,
+            phone:data.phone,
+            photo:'data:image/png;base64,' + data.photo
+        })
     },
-
-    /**
-     * 生命周期函数--监听页面初次渲染完成
-     */
-    onReady: function () {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面显示
-     */
-    onShow: function () {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面隐藏
-     */
-    onHide: function () {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面卸载
-     */
-    onUnload: function () {
-
-    },
-
-    /**
-     * 页面相关事件处理函数--监听用户下拉动作
-     */
-    onPullDownRefresh: function () {
-
-    },
-
-    /**
-     * 页面上拉触底事件的处理函数
-     */
-    onReachBottom: function () {
-
-    },
-
-    /**
-     * 用户点击右上角分享
-     */
-    onShareAppMessage: function () {
-
+    loginout:function(){
+        let data = wx.getStorageSync('user')
+        var that = this
+        wx.showModal({
+          cancelColor: 'true',
+          title:'是否要退出账户',
+          success(res){
+            wx.removeStorageSync('user');
+              if(res.confirm){
+                
+                console.log('用户点击了退出');
+                console.log(data)
+                setTimeout(()=>{
+                    wx.switchTab({
+                      url: '/pages/me/me',
+                    },1000);
+                    app.globalData.photo = '../images/男头像.png'
+                })
+              }
+          }
+        })
     }
 })

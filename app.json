@@ -1,19 +1,19 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/content/content",
+    "pages/detail/detail",
     "pages/note/note",
     "pages/login/login",
     "pages/mid/mid",
     "pages/addcontent/addcontent",
     "pages/addbook/addbook",
     "pages/booknote/booknote",
-    "pages/detail/detail",
     "pages/regit/regit",
     "pages/addnote/addnote",
     "pages/book/book",
     "pages/select/select",
     "pages/me/me",
-    "pages/content/content",
     "pages/logs/logs"
   ],
   "window": {

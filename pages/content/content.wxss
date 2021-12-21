@@ -1,15 +1,17 @@
 page{
     background-color: #FFF2E2;
 }
+.box{
+    width: 80%;
+    height: 100vh;
+}
 .content{
     margin-top: 5%;
-    display: inline-block;
-    font-size: 22px;
+    display: inline-block; 
+    font-size: 20px; 
     background: linear-gradient(90deg, grey 66%, transparent 0) repeat-x;
     background-size: 0.5em 1px;
     background-position: 0 1.5em;
     text-shadow: 0.05em 0 #fff, -0.05em 0 #fff; 
-    width: 90%;
-    margin-left: 5%;
-
+    width: 100%;
 }

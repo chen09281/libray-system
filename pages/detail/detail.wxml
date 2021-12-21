@@ -1,2 +1,13 @@
-<!--pages/detail/detail.wxml-->
-<text>pages/detail/detail.wxml</text>
+<view class="box">
+<image class="backg" src="../images/back.jpg"/>
+<view class="banner">个人信息:</view>
+<view class="content">
+<view class="photo"><image src="{{photo}}" id="photo" /></view>
+<view class="item">
+    <view class="name">用户名:{{name}}</view>
+    <view class="arrds">地址:{{arr}}</view>
+    <view class="phone">电话:{{phone}}</view>
+</view>
+<button bindtap="loginout" class="loginout">退出</button>
+</view>
+</view>

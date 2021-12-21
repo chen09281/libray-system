@@ -24,8 +24,11 @@ Page({
             success: function (res) {
                 console.log(res.data)
                 let data = res.data
-                app.globalData.user_id =  data[data.length-1].id
-                app.globalData.photo = data[0].photo
+                if(data.length>1){
+                wx.setStorageSync('user', data[data.length-1])
+            } else if(data.length == 1){
+                wx.setStorageSync('user', data)
+            }
                 wx.showToast({
                   title: '登录成功',
                   icon:'success'
